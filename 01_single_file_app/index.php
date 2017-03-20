@@ -6,8 +6,8 @@ if (!file_exists(DATAFILE)) {
     file_put_contents(DATAFILE, $emptyArraySerialized);
 }
 
-$needCreate = array_key_exists('userName', $_POST) && array_key_exists('userMessage', $_POST);
-if ($needCreate) {
+$needsToCreate = array_key_exists('userName', $_POST) && array_key_exists('userMessage', $_POST);
+if ($needsToCreate) {
     $stringData = file_get_contents(DATAFILE);
     $arrayData = unserialize($stringData);
     $arrayData[] = [
