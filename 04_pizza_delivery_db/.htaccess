@@ -1,0 +1,7 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+
+    # go to index.php if the request is not for the Public folder
+    RewriteCond %{REQUEST_FILENAME} !04_pizza_delivery_db/Public/
+    RewriteRule ^ index.php
+</IfModule>

@@ -1,0 +1,7 @@
+# Install MySQL
+# create the database and table
+
+create a new database named: pizza_delivery
+use collate: utf8mb4_unicode_ci
+run the sql in Database folder to create the table
+edit the Configuraton/db.php
